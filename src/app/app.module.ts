@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ToastrModule } from 'ngx-toastr';
+import {HttpClientModule} from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+
 import { ListaProdutoComponent } from './components/produto/lista-produto/lista-produto.component';
 import { LerProdutoComponent } from './components/produto/ler-produto/ler-produto.component';
 import { NovoProdutoComponent } from './components/produto/novo-produto/novo-produto.component';
@@ -27,7 +30,10 @@ import { EditarProdutoComponent } from './components/produto/editar-produto/edit
       timeOut: 4000,
       closeButton: true,
       progressBar: true
-    })
+    }),
+    HttpClientModule,
+    FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
