@@ -1,0 +1,30 @@
+.container{
+  background-color: rgb(225, 225, 225);
+  width: 400px;
+  margin: 30px auto;
+  padding: 10px 0 10px 0;
+}
+
+.box {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btnC {
+  width: 122px;
+  margin: 0 2px 0 2px;
+}
+
+.btnR {
+  margin: 10px 0 0 10px;
+}
+
+mat-icon {
+  opacity: 0.6;
+}
+
+flexBtn {
+  display: inline;
+}

@@ -1,1 +1,39 @@
-<p>editar-produto works!</p>
+<div class="container mat-elevation-z4">
+  <button class="btnR" routerLink="../" mat-stroked-button color="primary">Retornar</button>
+<div class="box">
+  <h2>Atualização de Produto</h2>
+<p>
+  <mat-form-field appearance="fill">
+    <mat-label>Nome</mat-label>
+    <input
+    matInput
+    placeholder="Ex. Produto"
+    name="nome"
+    [formControl]="nome"
+    [(ngModel)]="produto.nome"
+    required>
+    <mat-error *ngIf="nome.invalid">{{getErrorMessageNome()}}</mat-error>
+    <mat-icon matSuffix>sort_by_alpha</mat-icon>
+  </mat-form-field>
+</p>
+<p>
+  <mat-form-field appearance="fill">
+    <mat-label>Preço</mat-label>
+    <input
+    matInput
+    type="number"
+    placeholder="Ex. 100"
+    name="preco"
+    [formControl]="preco"
+    [(ngModel)]="produto.preco"
+    required>
+    <mat-error *ngIf="preco.invalid">{{getErrorMessagePreco()}}</mat-error>
+    <mat-icon matSuffix>attach_money</mat-icon>
+  </mat-form-field>
+</p>
+<div class="flexBtn">
+  <button class="btnC" (click)="update()" [disabled]="!validaCampos()" mat-raised-button color="primary">Atualizar</button>
+  <button class="btnC" (click)="limparCampos()" [disabled]="minCampos()" mat-raised-button>Limpar</button>
+</div>
+</div>
+</div>
