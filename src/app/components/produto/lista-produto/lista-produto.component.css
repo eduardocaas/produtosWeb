@@ -16,6 +16,10 @@
   color: rgb(211, 97, 97);
 }
 
+.view {
+    color: rgb(139, 139, 139);
+}
+
 table {
   width: 100%;
 }

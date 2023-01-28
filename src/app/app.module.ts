@@ -28,6 +28,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
+import { MatDialogModule } from '@angular/material/dialog';
+import { DialogProdutoComponent } from './components/produto/dialog-produto/dialog-produto.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,8 @@ import { MatCardModule } from '@angular/material/card';
     ListaProdutoComponent,
     LerProdutoComponent,
     NovoProdutoComponent,
-    EditarProdutoComponent
+    EditarProdutoComponent,
+    DialogProdutoComponent
   ],
   imports: [
     BrowserModule,
@@ -63,6 +66,7 @@ import { MatCardModule } from '@angular/material/card';
       closeButton: true,
       progressBar: true,
     }),
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
