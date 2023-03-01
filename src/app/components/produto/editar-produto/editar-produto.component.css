@@ -21,6 +21,10 @@
   margin: 10px 0 0 10px;
 }
 
+.field {
+  margin-bottom: 5px; 
+}
+
 mat-icon {
   opacity: 0.6;
 }
